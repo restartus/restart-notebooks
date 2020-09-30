@@ -1,0 +1,26 @@
+name: restart
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pandas
+  - ipywidgets
+  - ipympl
+  - ipyvuetify
+  - ipysheet
+  - scipy
+  - altair
+  - qgrid
+  - xlrd
+  - confuse
+  - bqplot
+  - h5py
+  - pyomo
+  - ipyvolume
+  - pip
+  - pip:
+    - restart
+    - tables
+    - restart_datasets
+
