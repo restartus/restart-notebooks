@@ -23,4 +23,5 @@ dependencies:
     - restart
     - tables
     - restart_datasets
+    - voila
 
