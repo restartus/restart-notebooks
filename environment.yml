@@ -20,7 +20,7 @@ dependencies:
   - ipyvolume
   - pip
   - pip:
-    - restart
+    - restart=2.6.7
     - tables
     - restart_datasets
     - voila
