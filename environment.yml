@@ -1,4 +1,4 @@
-name: restart
+name: restart-notebooks
 channels:
   - conda-forge
   - defaults
