@@ -18,5 +18,14 @@ ENV=conda make install
 conda activate restart-notebooks
 ```
 
+To make this work under pipenv
+
+```bash
+git clone https://github.com/restartus/restart-notebooks.git
+brew install pipenv
+make install
+```
+
 From here you can run the `jupyter notebook` command to open the notebooks in
-your web browser.
+your web browser. Note that it will take some seconds after you do a run all
+for the results to show. There is no immediate feedback.
