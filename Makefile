@@ -1,4 +1,3 @@
-PYTHON := 3.7
 .DEFAULT_GOAL := help
 TAG ?= 0.9
 
