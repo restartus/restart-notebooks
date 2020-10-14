@@ -15,5 +15,4 @@ make install
 conda activate restart
 ```
 
-From here you can run the `jupyter notebook` command to open the notebooks in your web browser.
-
+The notebooks should now run using your preferred method of viewing Jupyter Notebooks.
