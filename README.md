@@ -9,23 +9,21 @@ PPE forecasting.
 
 These notebooks are hosted on binder (see badge above), or you can host them
 locally. To host locally, clone this repo, and then build the conda
-environment:
+environment.
 
-```bash
-git clone https://github.com/restartus/restart-notebooks.git
+```console
 brew cask install miniconda
-ENV=conda make install
+conda init  # You'll need to restart your terminal after this step
+git clone --recurse-submodules https://github.com/restartus/restart-notebooks.git
+cd restart-notebooks && make install
 conda activate restart-notebooks
 ```
 
-To make this work under pipenv
+# Running Notebooks
+You can use the `jupyter notebook` command to open a web browser containing
+all notebooks in this repository. Notebooks with the suffix `EDITABLE` are
+meant to be run as pure Jupyter notebooks. Notebooks with the suffix `READONLY`
+are meant to be run with the `voila` command.
 
-```bash
-git clone https://github.com/restartus/restart-notebooks.git
-brew install pipenv
-make install
-```
-
-From here you can run the `jupyter notebook` command to open the notebooks in
-your web browser. Note that it will take some seconds after you do a run all
-for the results to show. There is no immediate feedback.
+To view these read-only notebooks, use `voila <name-of-notebook>`, which will
+open a web browser.
