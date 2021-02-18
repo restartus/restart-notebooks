@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := help
-TAG ?= 0.9
 
+install:
+	conda env update -f environment.yml
 
-include lib/include.nb.mk
-include lib/include.python.mk
-include lib/include.mk
+help:
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, %%2}'
